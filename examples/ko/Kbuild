@@ -1,6 +1,6 @@
 MODE ?= release
 
-build_args := -Z build-std=core,alloc --target x86_64-linux-kernel
+build_args := -Z build-std=core,alloc --target x86_64-unknown-linux-gnu
 rust_lib := $(src)/rust/target/x86_64-linux-kernel/$(MODE)/librvm_ko.a
 
 export c_flags
